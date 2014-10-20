@@ -1,5 +1,5 @@
 package refactorizar;
-
+import java.util.Scanner;
 /**
  * Lista los numeros primos de dos cifras
  *
@@ -10,7 +10,7 @@ public class Refactorizar {
         boolean primo = false;
         int longitudDigito = 0;
         int contadorDigito = 0;
-        longitudDigito = 2;
+        longitudDigito = entradaDato();
         if (longitudDigito <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
@@ -60,6 +60,14 @@ public class Refactorizar {
                 }
             }
         }
+    }
+
+    private static int entradaDato() {
+        int longitudDigito;
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Introduce longitud ; ");              
+        longitudDigito = sc.nextInt();
+        return longitudDigito;
     }
 
 }
