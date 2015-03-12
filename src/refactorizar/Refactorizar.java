@@ -1,5 +1,6 @@
 package refactorizar;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 /**
  * Lista los numeros primos de dos cifras
  *
@@ -7,8 +8,8 @@ import java.util.Scanner;
 public class Refactorizar {
 
     /**
-     * Método main para el testeo de nuestra amplicación.
-     * @param args
+     * Método main de testeo.
+     * @param args Le pasamos todos los argumentos.
      */
     public static void main(String[] args) {
         boolean primo = false;
@@ -66,19 +67,16 @@ public class Refactorizar {
         }
     }
 
-    
     /**
-     * Método para meter por teclado un valor.
-     * @return Devuelve la longitud introducida por teclado.
-     * 
+     * Método para pedir por teclado datos.
+     * @return Devuelve el valor introducido por teclado (lontigud).
      */
     private static int entradaDato() {
         
         int longitudDigito;
-        Scanner sc = new Scanner (System.in);
-        System.out.println("Introduce longitud ; ");              
-        longitudDigito = sc.nextInt();
+        longitudDigito = Integer.parseInt(JOptionPane.showInputDialog("Introduce dato."));
         return longitudDigito;
+        //No deja crear un conflicto. 
     }
 
 }
