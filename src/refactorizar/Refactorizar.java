@@ -1,5 +1,6 @@
 package refactorizar;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 /**
  * Lista los numeros primos de dos cifras
  *
@@ -72,9 +73,7 @@ public class Refactorizar {
      */
     private static int entradaDato() {
         int longitudDigito;
-        Scanner sc = new Scanner (System.in);
-        System.out.println("Introduce longitud ; ");              
-        longitudDigito = sc.nextInt();
+        longitudDigito = Integer.parseInt(JOptionPane.showInputDialog("Introduce dato."));
         return longitudDigito;
     }
 
