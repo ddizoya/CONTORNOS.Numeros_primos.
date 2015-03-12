@@ -75,6 +75,7 @@ public class Refactorizar {
         int longitudDigito;
         longitudDigito = Integer.parseInt(JOptionPane.showInputDialog("Introduce dato."));
         return longitudDigito;
+        //No deja crear un conflicto. 
     }
 
 }
