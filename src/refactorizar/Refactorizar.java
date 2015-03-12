@@ -6,6 +6,10 @@ import java.util.Scanner;
  */
 public class Refactorizar {
 
+    /**
+     * Método main de testeo.
+     * @param args Le pasamos todos los argumentos.
+     */
     public static void main(String[] args) {
         boolean primo = false;
         int longitudDigito = 0;
@@ -62,6 +66,10 @@ public class Refactorizar {
         }
     }
 
+    /**
+     * Método para pedir por teclado datos.
+     * @return Devuelve el valor introducido por teclado (lontigud).
+     */
     private static int entradaDato() {
         int longitudDigito;
         Scanner sc = new Scanner (System.in);
